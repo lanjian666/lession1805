@@ -34,7 +34,6 @@ public class ListServlet extends HttpServlet {
 		}
 		for (String set : setScore) {
 			Student student=dao.getObject(set);
-			System.out.println(student.getName()+"list");
 			list.add(student);
 		}
 		request.setAttribute("list", list);

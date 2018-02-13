@@ -27,7 +27,6 @@ public class AddServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String id=UUID.randomUUID().toString().replaceAll("-", "");
 		String name=request.getParameter("name");
-		System.out.println(name+"add");
 		String birthdayStr=request.getParameter("birthday");
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 		Date birthday=null;
